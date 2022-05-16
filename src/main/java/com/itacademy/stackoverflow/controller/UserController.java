@@ -52,6 +52,7 @@ public class UserController {
 
     @GetMapping("/{id}/posts")
     public List<PostResponse> getAllPost(@PathVariable("id") Long id) {
+
         return service.getPostByUserId(id);
     }
 

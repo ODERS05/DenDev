@@ -24,4 +24,9 @@ public class MainController {
     List<PostResponse> getAllPost() {
         return postService.getAll();
     }
+
+    @GetMapping
+    String search(){
+        return "somethig";
+    }
 }
